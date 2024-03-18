@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css?family=Damion|Muli:400,600');
+body{
+  font-family: 'Muli', sans-serif;
+  background: url("https://www.toptal.com/designers/subtlepatterns/patterns/geometry2.png");
+}
+h2 {
+    font-family: 'Damion', cursive;
+    font-weight: 400;
+    color: #214d22;
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+}
+h2:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    left: 0;
+    top: 22px;
+    background: #214d22;
+    height: 1px;
+}
+h2 i {
+    font-style: normal;
+    background: #fff;
+    position: relative;
+    padding: 10px;
+}
+.titulo{
+    font-family: 'Muli', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+:focus{outline: none;}
+
+/* necessary to give position: relative to parent. */
+input[type="text"]{font: 15px/24px 'Muli', sans-serif; color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
+input[type="number"]{font: 15px/24px 'Muli', sans-serif; color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
+
+:focus{outline: none;}
+
+.col-3{float: left; position: relative;} /* necessary to give position: relative to parent. */
+input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
+
+
+
+.input {
+  font-family:'Open Sans';
+  font-size: 16px;
+  font-weight:400;
+  display:inline-block;
+  color:#FFF;
+  border-radius: .25em;
+  text-shadow: -1px -1px 0px rgba(0,0,0,0.4);
+}
+
+.primary {
+  line-height:40px;
+  transition:ease-in-out .2s;
+  padding: 0 16px;
+}
+
+.primary:hover, .condensed:hover, .touch:hover {
+  transform:scale(1.02);
+  box-shadow:2px 2px 5px rgba(0,0,0,0.20), inset 0 0 0 99999px rgba(0,0,0,0.2);
+}
+/* 2nd alternate hover colors if hover inset shadow not working properly 
+.edit:hover {
+  background: darken($gw-blue, 10%);
+}
+
+.save:hover {
+  background: darken($gw-purple, 10%);
+}
+
+.new:hover {
+  background: darken($gw-green, 10%);
+}
+
+.cancel:hover {
+  background: darken($gw-gray-5, 10%);
+}
+
+.delete:hover {
+  background: darken($gw-red, 10%);
+}
+*/
+
+.condensed {
+  transition:ease-in-out .2s;
+  line-height:24px;
+  padding: 0 8px;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+}
+
+.touch {
+  transition:ease-in-out .2s;
+  line-height:40px;
+  width:40px;
+  padding: 0px;
+  text-align: center;
+}
+
+
+
+.edit:before, .save:before, .new:before, .cancel:before, .delete:before {
+  font-family: FontAwesome;
+  display: inline-block;
+  font-size:1rem;
+  padding-right:12px;
+  background:none;
+  color:#FFF;
+}
+
+.condensed.edit:before, .condensed.save:before, .condensed.new:before, .condensed.cancel:before, .condensed.delete:before {
+   content:none;
+}
+
+.touch.edit:before, .touch.save:before, .touch.new:before, .touch.cancel:before, .touch.delete:before {
+  width:100%;
+  text-align:center;
+  font-size:1.25rem;
+}
+
+.inlineIcon.edit, .inlineIcon.save, .inlineIcon.new, .inlineIcon.cancel, .inlineIcon.delete {
+  background: transparent;
+}
+
+.inlineIcon.edit:before, .inlineIcon.save:before, .inlineIcon.new:before, .inlineIcon.cancel:before, .inlineIcon.delete:before {
+  line-height:32px;
+  font-size:32px;
+  padding:4px 0px;
+}
+
+.edit {
+  background:rgb(52, 152, 219); 
+  
+  &:before {
+    content: "\f040";
+  }
+}
+
+.inlineIcon.edit:before {
+    color: rgb(52, 152, 219);
+}
+
+.delete {
+  background: rgb(192, 57, 43);
+  
+  &:before {
+    content: "\f1f8";
+  }
+}
+
+.inlineIcon.delete:before {
+    color: rgb(192, 57, 43);
+}
+
+/* Estilos CSS */
+/* Estilos CSS */
+
+
+.center {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.form-container {
+    max-width: 400px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+   
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group input[type="text"], 
+.form-group input[type="number"],
+.form-group select {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-group input[type="text"] {
+    width: 100%;
+}
+.form-group select {
+    width: 100%;
+}
+.form-group::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.form-group label{
+    text-align: left;
+    width: auto;
+    float:left;
+    white-space: nowrap;
+}
+.form-group input,
+.form-group select {
+    float: left;
+}
+.form-group label {
+    width: 10%;
+    text-align: right;
+    padding-right: 10px;
+}
+.form-group input,
+.form-group select {
+    width: 70%;
+}
+.center {
+    text-align: center;
+}
+
+.rounded-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px; 
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    background-color: #3b9bff; 
+    color: white; 
+}
+
+.rounded-button:hover {
+    background-color: #2f8ff7;
+}
+
+.circle-button {
+    width: 150px;
+    height: 140px;
+    border-radius: 70%;
+    background-color: #347ece;
+    color: white;
+    font-size: 14px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    margin-left: 0px;
+    box-sizing: border-box;
+    display: block; /* Muestra los botones uno debajo del otro */
+}
+
+.circle-button:hover {
+    background-color: #2f8ff7;
+}
+.container {
+    display: flex;
+    justify-content: space-between; /* Espacio entre el formulario y los botones */
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column; /* Alinea los botones en columna */
+    align-items: flex-end; /* Alinea los botones a la derecha */
+    justify-content: flex-start; /* Alinea los botones arriba */
+    position: absolute; /* Ajusta la posición absoluta */
+    top: 0; /* Alinea los botones en la parte superior de la página */
+    right: 0; /* Alinea los botones a la derecha */
+    margin-top: 20px; /* Agrega un margen superior */
+    margin-right: 20px; /* Agrega un margen derecho */
+}
+
+/* Estilos básicos para la tabla */
+.table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 30px;
+
+  }
+  
+  /* Estilos para las celdas de datos */
+  .table td {
+    border: 1px solid #ddd;
+    width: 100px;
+    text-align: center; 
+    
+    
+  }
+  
+  /* Estilos para las filas de la tabla */
+  .table tr {
+    background-color: #f2f2f2;
+    height: 40px;
+
+ 
+  }
+  
+  /* Estilos para la primera fila (encabezados) */
+  .table th {
+    background-color: #c54646;
+    color: white;
+    border: 1px solid #ddd;
+
+    text-align: center;
+  }
+  .tdacciones{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    width: 70px;
+    background-color: rgb(199, 197, 197);
+  }
+
+  .tdencabezado{
+    font-weight: 800;
+    background-color: #a5d5f5;
+  }
+  .body-tab
+  {
+    background-color: #174774;
+  }
+
+  input[type="submit"] {
+    width: auto; 
+    border: 1px solid #ddd; 
+   
+    padding: 20px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  
+  
+  .btn-editar
+  {
+         font-size: 16px;
+         font-weight: bold;
+         padding-top: 20px; 
+         background-color: #4298d1; 
+         border: 2px solid #ccc; 
+         text-align: center;
+         font-weight: bold;
+         color: #f0f0f0;
+         border-radius: 30px;
+         margin-left: 7px;
+
+  }
+  .btn-editar:hover{
+    background-color: #227db9;
+  }
+
+  .btn-eliminar
+  {
+        font-size: 16px;
+        font-weight: bold;
+        padding-top: 20px; 
+        background-color: #b83530; 
+        border: 2px solid #ccc; 
+        text-align: center;
+        font-weight: bold;
+        color: #f0f0f0;
+        border-radius: 30px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+
+    }
+
+  .btn-eliminar:hover{
+    background-color: #a1231f;
+
+  }
+
+  .btn-regresar{
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 20px; 
+    background-color: #bea151; 
+    border: 2px solid #ccc; 
+    text-align: center;
+    font-weight: bold;
+    color: #f0f0f0;
+    border-radius: 30px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+  .btn-actualizar{
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 20px; 
+    background-color: #2f8ff7; 
+    border: 2px solid #ccc; 
+    text-align: center;
+    font-weight: bold;
+    color: #f0f0f0;
+    border-radius: 30px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+
